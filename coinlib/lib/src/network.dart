@@ -18,26 +18,26 @@ class Network {
   });
 
   static final mainnet = Network(
-    wifPrefix: 183,
-    p2pkhPrefix: 55,
-    p2shPrefix: 117,
+    wifPrefix: b5,
+    p2pkhPrefix: 35,
+    p2shPrefix: 1e,
     privHDPrefix: 0x0488ade4,
     pubHDPrefix: 0x0488b21e,
-    bech32Hrp: "pc",
-    messagePrefix: "Peercoin Signed Message:\n",
+    bech32Hrp: "dem",
+    messagePrefix: "Deutsche eMark Signed Message:\n",
     minFee: BigInt.from(1000),
     minOutput: BigInt.from(10000),
     feePerKb: BigInt.from(10000),
   );
 
-  static final testnet = Network(
-    wifPrefix: 239,
-    p2pkhPrefix: 111,
-    p2shPrefix: 196,
-    privHDPrefix: 0x043587CF,
-    pubHDPrefix: 0x04358394,
-    bech32Hrp: "tpc",
-    messagePrefix: "Peercoin Signed Message:\n",
+  static final mainnet = Network(
+    wifPrefix: 99,
+    p2pkhPrefix: 19,
+    p2shPrefix: 55,
+    privHDPrefix: 0x0488ade4,
+    pubHDPrefix: 0x0488b21e,
+    bech32Hrp: "jump",
+    messagePrefix: "Jumpcoin Signed Message:\n",
     minFee: BigInt.from(1000),
     minOutput: BigInt.from(10000),
     feePerKb: BigInt.from(10000),
